@@ -1,0 +1,24 @@
+{
+    "name": "Scout",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "OkBot(Api)",
+    "icons": {
+        "16": "images/GB-19.png",
+        "48": "images/GB-48.png",
+        "128": "images/GB-128.png"
+    },
+    "browser_action": {
+        "default_icon": "images/GB-19.png",
+        "default_title": "OkId"
+    },
+    "permissions": [ "tabs" ],
+    "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["script_1.js"]
+  }
+]
+}
